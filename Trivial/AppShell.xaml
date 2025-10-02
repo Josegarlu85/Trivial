@@ -12,4 +12,9 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <!--Recuerda tener esto o no navegara entre paginas aunque hayas creado metodos y botones-->
+
+    <ShellContent Title="Capital" ContentTemplate="{DataTemplate local:capital}" Route="capital" />
+    <ShellContent Title="País" ContentTemplate="{DataTemplate local:pais}" Route="pais" />
+
 </Shell>

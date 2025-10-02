@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trivial.capital"
+             Title="capital">
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+        <!-- Fondo de mapa -->
+        <Image Source="mapamundiantiguo.jpg"
+               Aspect="AspectFill"
+               Opacity="0.8"
+               IsEnabled="False" />
+
+        <!-- Panel de bienvenida
+        zIndex mas bajo que otro que mostraremos mas adelante para que sea superpuesto sobre este-->
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            IsVisible="True"
+            x:Name="PanelBienvenida"
+            ZIndex="2">
+
+            <Label
+                Text="En este modo tendrás que averiguar cuál es la capital del país indicado"
+                FontFamily="Astronomy"
+                FontSize="24"
+                TextColor="White"
+                HorizontalTextAlignment="Center" />
+
+            <Button
+                Text="🎮 Iniciar juego"
+                Clicked="OnStartGameClicked"
+                BackgroundColor="Green"
+                TextColor="White" />
+
+            <Button
+                Text="🏠 Volver al inicio"
+                Clicked="OnHomeClicked"
+                BackgroundColor="LimeGreen"
+                TextColor="White" />
+        </VerticalStackLayout>
+
+        <!-- Panel de juego 
+        is visible = false para mostrarse solo al iniciar
+        ZIndex es importante para mostrarlo por encima del fondo, el valor mayor se muestra por encima-->
+        <Frame x:Name="PanelJuego"
+          IsVisible="False" 
+          BackgroundColor="SaddleBrown"
+          CornerRadius="15"
+          Padding="25"
+          WidthRequest="350"
+          HorizontalOptions="Center"
+          VerticalOptions="Center"
+          ZIndex="3"
+          HasShadow="True">
+
+            <VerticalStackLayout Spacing="20">
+
+                <Label x:Name="EtiquetaPregunta"
+                       FontSize="20"
+                       FontFamily="Astronomy"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" />
+
+                <VerticalStackLayout x:Name="PanelOpciones"
+                                     Spacing="10"
+                                     HorizontalOptions="Center" />
+
+                <Label x:Name="EtiquetaPuntuacion"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>

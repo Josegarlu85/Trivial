@@ -4,48 +4,50 @@
              x:Class="Trivial.MainPage">
 
 
-    <Grid>
+	<Grid VerticalOptions="Center" HorizontalOptions="Center">
 
-        <Image Source="mapamundiantiguo.jpg" Aspect="AspectFill" Opacity="0.8" IsEnabled="False"/>
+		<Image Source="mapamundiantiguo.jpg" Aspect="AspectFill" Opacity="0.8" IsEnabled="False"/>
 
 
-        <ScrollView>
-            <VerticalStackLayout
+		<ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+			<VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+			HorizontalOptions="Center"
+			VerticalOptions="Center">
 
-                <Label
+				<Label
                     Text="Bienvenido a esta versión de Trivial geográfico"
                     FontFamily="Astronomy"
                     FontSize="24"
                     TextColor="White"/>
 
-                <Label
+				<Label
                     Text="Indique qué versión desea jugar"
                     FontFamily="Best-Quality"
                     FontSize="20"
                     TextColor="White"/>
 
-                <Grid ColumnSpacing="10" RowSpacing="10">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
+				<Grid ColumnSpacing="10" RowSpacing="10">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
 
-                    <Button Text="Adivina la capital" Grid.Row="0" Grid.Column="0" Clicked="capitalTrivial"/>
-                    <Button Text="Adivina el pais" Grid.Row="0" Grid.Column="1" Clicked="paisTrivial"/>
+					<Button Text="Adivina la capital" Grid.Row="0" Grid.Column="0" Clicked="capitalTrivial"/>
+					<Button Text="Adivina el pais" Grid.Row="0" Grid.Column="1" Clicked="paisTrivial"/>
 
-                    <Image Source="capitales.jpg" Grid.Row="1" Grid.Column="0" WidthRequest="100" HeightRequest="100"/>
-                    <Image Source="pais.jpg" Grid.Row="1" Grid.Column="1" WidthRequest="100" HeightRequest="100"/>
+					<Image Source="capitales.jpg" Grid.Row="1" Grid.Column="0" WidthRequest="100" HeightRequest="100"/>
+					<Image Source="pais.jpg" Grid.Row="1" Grid.Column="1" WidthRequest="100" HeightRequest="100"/>
 
-                </Grid>
-            </VerticalStackLayout>
-        </ScrollView>
-    </Grid>
+				</Grid>
+			</VerticalStackLayout>
+		</ScrollView>
+	</Grid>
 
 </ContentPage>
