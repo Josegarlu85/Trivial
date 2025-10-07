@@ -1,4 +1,4 @@
-namespace Trivial;
+Ôªønamespace Trivial;
 
 public partial class pais : ContentPage
 {
@@ -9,14 +9,14 @@ public partial class pais : ContentPage
 
     private List<(string pais, string capital)> listaPreguntas = new()
     {
-        ("Francia", "ParÌs"),
+        ("Francia", "Par√≠s"),
         ("Italia", "Roma"),
-        ("EspaÒa", "Madrid"),
-        ("Alemania", "BerlÌn"),
+        ("Espa√±a", "Madrid"),
+        ("Alemania", "Berl√≠n"),
         ("Portugal", "Lisboa"),
         ("Grecia", "Atenas"),
-        ("JapÛn", "Tokio"),
-        ("MÈxico", "Ciudad de MÈxico"),
+        ("Jap√≥n", "Tokio"),
+        ("M√©xico", "Ciudad de M√©xico"),
         ("Argentina", "Buenos Aires"),
         ("Egipto", "El Cairo")
     };
@@ -52,7 +52,7 @@ public partial class pais : ContentPage
             PanelJuego.IsVisible = false;
             PanelBienvenida.IsVisible = true;
 
-            DisplayAlert("Resultado", $"Aciertos: {aciertos}\nFallos: {fallos}", "OK");
+            DisplayAlert("Resultado", $"‚úîÔ∏èAciertos: {aciertos}\n‚ùåFallos: {fallos}", "OK");
             return;
         }
 
@@ -62,7 +62,7 @@ public partial class pais : ContentPage
 
         paisCorrectoActual = paisCorrecto;
 
-        EtiquetaPregunta.Text = $"øA quÈ paÌs pertenece la capital {capital}?";
+        EtiquetaPregunta.Text = $"¬øA qu√© pa√≠s pertenece la capital {capital}?";
 
         List<string> todosLosPaises = new List<string>();
         for (int i = 0; i < listaPreguntas.Count; i++)
@@ -124,7 +124,7 @@ public partial class pais : ContentPage
             PanelOpciones.Children.Add(boton);
         }
 
-        EtiquetaPuntuacion.Text = $"Pregunta {preguntaActual + 1} de 10 | Aciertos: {aciertos} | Fallos: {fallos}";
+        EtiquetaPuntuacion.Text = $"Pregunta {preguntaActual + 1} de 10\n | ‚úîÔ∏èAciertos: {aciertos} | ‚ùåFallos: {fallos} |";
     }
 
     private void AlSeleccionarOpcion(object sender, EventArgs e)

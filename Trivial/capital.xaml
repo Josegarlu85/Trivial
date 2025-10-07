@@ -9,7 +9,7 @@
         <!-- Fondo de mapa -->
         <Image Source="mapamundiantiguo.jpg"
                Aspect="AspectFill"
-               Opacity="0.8"
+               Opacity="0.6"
                IsEnabled="False" />
 
         <!-- Panel de bienvenida
@@ -24,10 +24,10 @@
             ZIndex="2">
 
             <Label
-                Text="En este modo tendrás que averiguar cuál es la capital del país indicado"
-                FontFamily="Astronomy"
+                Text="Averigue cual es la capital del pais especificado"
+                FontFamily="OpenSansRegular"
                 FontSize="24"
-                TextColor="White"
+                TextColor="DarkBlue"
                 HorizontalTextAlignment="Center" />
 
             <Button
@@ -39,7 +39,7 @@
             <Button
                 Text="🏠 Volver al inicio"
                 Clicked="OnHomeClicked"
-                BackgroundColor="LimeGreen"
+                BackgroundColor="OrangeRed"
                 TextColor="White" />
         </VerticalStackLayout>
 

@@ -8,7 +8,7 @@
         <!-- Fondo de mapa -->
         <Image Source="mapamundiantiguo.jpg"
                Aspect="AspectFill"
-               Opacity="0.8"
+               Opacity="0.6"
                IsEnabled="False" />
 
         <!-- Panel de bienvenida
@@ -24,9 +24,9 @@
 
             <Label
                 Text="En la siguiente modalidad tendras que acertar el pais entre una lista de capitales"
-                FontFamily="Astronomy"
+                FontFamily="OpenSansRegular"
                 FontSize="24"
-                TextColor="White"
+                TextColor="DarkBlue"
                 HorizontalTextAlignment="Center" />
 
             <Button
@@ -38,7 +38,7 @@
             <Button
                 Text="🏠 Volver al inicio"
                 Clicked="OnHomeClicked"
-                BackgroundColor="LimeGreen"
+                BackgroundColor="OrangeRed"
                 TextColor="White" />
         </VerticalStackLayout>
 

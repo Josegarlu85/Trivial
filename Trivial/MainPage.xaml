@@ -6,7 +6,7 @@
 
 	<Grid VerticalOptions="Center" HorizontalOptions="Center">
 
-		<Image Source="mapamundiantiguo.jpg" Aspect="AspectFill" Opacity="0.8" IsEnabled="False"/>
+		<Image Source="mapamundiantiguo.jpg" Aspect="AspectFill" Opacity="0.6" IsEnabled="False"/>
 
 
 		<ScrollView HorizontalOptions="Center" VerticalOptions="Center">
@@ -20,13 +20,13 @@
                     Text="Bienvenido a esta versión de Trivial geográfico"
                     FontFamily="Astronomy"
                     FontSize="24"
-                    TextColor="White"/>
+                    TextColor="DarkBlue"/>
 
 				<Label
                     Text="Indique qué versión desea jugar"
-                    FontFamily="Best-Quality"
+                    FontFamily="OpenSansRegular"
                     FontSize="20"
-                    TextColor="White"/>
+                    TextColor="DarkBlue"/>
 
 				<Grid ColumnSpacing="10" RowSpacing="10">
 					<Grid.RowDefinitions>

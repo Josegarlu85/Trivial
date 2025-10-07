@@ -67,7 +67,8 @@ public partial class capital : ContentPage
             PanelBienvenida.IsVisible = true;
 
             // Muestra una ventana emergente con los resultados
-            DisplayAlert("Resultado", $"Aciertos: {aciertos}\nFallos: {fallos}", "OK");
+            DisplayAlert("Resultado", $"✔️Aciertos: {aciertos}\n❌" +
+                $"Fallos: {fallos}", "OK");
             return; // Sale del metodo
         }
 
@@ -155,7 +156,7 @@ public partial class capital : ContentPage
         }
 
         //  Actualiza la puntuación en pantalla
-        EtiquetaPuntuacion.Text = $"Pregunta {preguntaActual + 1} de 10 | Aciertos: {aciertos} | Fallos: {fallos}";
+        EtiquetaPuntuacion.Text = $"Pregunta {preguntaActual + 1} de 10\n | ✔️Aciertos: {aciertos} | ❌Fallos: {fallos} |";
     }
 
 
